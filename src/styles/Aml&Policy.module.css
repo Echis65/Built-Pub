@@ -1,0 +1,129 @@
+.termOfService{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 85px;
+    padding-bottom: 100px;
+}
+.termOfServiceIntro{
+    width: 100%;
+    height: 400px;
+    background-color: var(--blue-black);
+    margin-bottom: 80px;
+}
+.termOfServiceIntroWrapper{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.termOfServiceIntroleft>h1{
+    font-size: 3.2rem;
+    color: #ffff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.termOfServiceIntroleft>p{
+    font-size: 2rem;
+    color: #ffff;
+    line-height: 30px;
+    width: 80%;
+}
+.termOfServiceIntroRight{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.termOfServiceIntroRight>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 25px;
+    right: -67px;
+}
+.termOfServiceBodyWrapper{
+    width: 90%;
+    margin: auto;
+}
+.termOfServiceBodyWrapper>h1{
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--gray);
+    text-transform: uppercase;
+}   
+.termOfServiceBodyWrapper>p{
+    font-size: 1.4rem;
+    color: var(--gray);
+    margin-bottom: 30px;
+    line-height: 30px;
+    width: 70%;
+}
+.label{
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 1.4rem;
+    color: var(--gray);
+}
+.imageWrapper{
+    width: 100%;
+    height: 100%;
+    object-fit: contain!important;
+    position: absolute!important;
+    top: 40px!important;
+    right: -67px!important;
+}
+.termOfServiceBodyWrapper h3{
+    font-size: 1.6rem;
+    color: var(--gray);
+}
+.termOfServiceBodyWrapper ul{
+    padding-left: 30px;
+}
+.termOfServiceBodyWrapper ul li{
+    font-size: 1.6rem;
+    color: var(--gray);
+}
+@media screen and (max-width: 1115px){
+    .termOfServiceIntroWrapper{
+        width: 95%;
+    }
+    .imageWrapper{
+        top: 80px!important;
+        right: -27px!important;
+    }
+}
+@media screen and (max-width: 765px){
+    .termOfServiceIntroWrapper{
+        grid-template-columns: 1fr;
+    }
+    .imageWrapper{
+        display: none;
+    }
+    .termOfServiceIntro{
+        height: 220px;
+        text-align: center;
+    }
+    .termOfServiceIntroleft>p{
+        margin: auto;
+    }
+    .termOfServiceBodyWrapper>p{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 425px){
+    .termOfServiceIntroleft>h1{
+        font-size: 2.8rem;
+    }
+    .termOfServiceIntroleft>p{
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .termOfServiceBodyWrapper>p{
+        width: 95%;
+    }
+
+}

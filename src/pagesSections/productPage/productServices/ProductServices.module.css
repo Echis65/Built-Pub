@@ -1,0 +1,61 @@
+.productServices{
+    width: 100%;
+    height: 100%;
+}
+.productServicesWrapper{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.productService{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+    padding: 100px 0;
+
+}
+.first p{
+    width: 100%!important;
+}
+.serviceInfo h1{
+    font-size: 3.2rem;
+    margin-bottom: 40px;
+}
+.serviceInfo p{
+    font-size: 1.8rem;
+    width: 75%;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+.getStarted{
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: #02397D;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+@media screen and (max-width: 1115px){
+    .productServicesWrapper{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 765px){
+    .productService{
+        grid-template-columns: 1fr;
+    }
+    .serviceInfo p{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px){
+    .productService{
+        padding: 50px 0;
+    }
+    .serviceInfo h1{
+        font-size: 2.8rem;
+    }
+}

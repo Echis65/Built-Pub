@@ -1,0 +1,41 @@
+.productDropdown{
+    width: 600px!important;
+    height: fit-content;
+    padding: 25px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    background-color: #ffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    left: -90px;
+}
+/* .productSelected{
+    transform: translateY(-8px);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+} */
+.productDropDownItem{
+    padding: 10px;
+    cursor: pointer;
+}
+.productDropDownItem:hover{
+    background-color: #F5F5F5;
+}
+.productDropdownActive{
+    background-color: #F5F5F5;
+}
+.productObj{
+    font-size: 1.2rem!important;
+    font-weight: 500;
+    color: #4F4F4F!important;
+}
+.productDropDownItem p:nth-child(1){
+    font-size: 1.4rem!important;
+    color: #4F4F4F!important;
+    font-weight: 600!important;
+    margin-bottom: 8px;
+}

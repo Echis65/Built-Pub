@@ -1,0 +1,116 @@
+.footer{
+    width: 100%;
+    height: fit-content;
+    background-color: #242932;
+    box-sizing: border-box;
+    position: relative;
+    top: 85px;
+}
+.footerWrapper{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.footerTop{
+    width: 100%;
+    display: flex; 
+    padding: 40px 0;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.37);
+}
+.footerTopRight{
+    flex: 4;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.imageWrapper{
+    flex: 1;
+}
+.imageWrapper img{
+    width: 100px!important;
+    height: 32px!important;
+    object-fit: contain!important;
+}
+.footerTop span{
+    color: #ffff;
+    font-size: 1.4rem;
+}
+.location p{
+    color: #ffff;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.socialIcon{
+    font-size: 2.4rem!important;
+    margin-right: 15px;
+    color: #ffff;
+    cursor: pointer;
+}
+.footerBody{
+    padding: 50px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.37);
+
+}
+.footerbodyItem h2{
+    color: #ffff;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+.footerbodyItem ul{
+    padding: 0;
+}
+.footerbodyItem li{
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.footerBottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.footerBottom span{
+    font-size: 1.4rem;
+    color: #ffff;
+}
+@media screen and (max-width: 1115px){
+    .footerWrapper{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 769px){
+    .footerTop{
+        flex-direction: column;
+    }
+    .footerTopRight{
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .footerBody{
+        grid-template-columns: 1fr 1fr;
+    }   
+}
+@media screen and (max-width: 425px){
+    .footerTopRight{
+        grid-template-columns: 1fr;
+    }
+    .footerBody{
+        grid-template-columns: 1fr;
+    }   
+    .footerBottom{
+        flex-direction: column;
+    }
+    .footerBottom>span:not(:last-child){
+        display: block;
+        margin-bottom: 20px;
+    }
+}

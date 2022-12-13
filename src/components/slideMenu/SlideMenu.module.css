@@ -1,0 +1,115 @@
+.slideMenu{
+    width: 80%;
+    height: 100vh;
+    background-color: #ffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    box-sizing: border-box;
+    overflow: scroll;
+    transition: all 0.6s ease;
+    transform: translateX(-100vw);
+}
+.slideMenuActive{
+    transform: translateX(0);
+}
+.child{
+    cursor: pointer;
+}
+.slideMenuWrapper{
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px 10px 20px;
+    box-sizing: border-box;
+}
+.imageWrapper{
+    width: 150px;
+    height: 40px;
+}
+.slideMenuHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+}
+.closeIcon{
+    font-size: 2.8rem!important;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 3px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+.navList>li{
+    list-style-type: none;
+    font-size: 2rem;
+    color: var(--gray);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid lightgray;
+
+}
+.productListHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.rightIcon{
+    font-size: 2.5rem!important;
+    color: var(--gray);
+    font-weight: 700;
+}
+.rightIconActive{
+    transform: rotate(90deg);
+}
+.productNavLists p{
+    font-size: 2rem;
+    color: var(--gray);
+    font-weight: 700;
+}
+.productLists li:not(:last-child){
+    border-bottom: 1px solid lightgray;
+}
+.productLists li{
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.8rem;
+}
+.companyListHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.rightIcon{
+    font-size: 2.5rem!important;
+    color: var(--gray);
+    font-weight: 700;
+}
+.rightIconActive{
+    transform: rotate(90deg);
+}
+.companyNavLists p{
+    font-size: 2rem;
+    color: var(--gray);
+    font-weight: 700;
+}
+.companyLists li:not(:last-child){
+    border-bottom: 1px solid lightgray;
+}
+.companyLists li{
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.8rem;
+}

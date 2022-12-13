@@ -1,0 +1,145 @@
+.bookingSection{
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+.bookingSessionWrapper{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bookingHeader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bookingOptions{
+    width: 430px;
+    height: 62px;
+    border: 0.5px solid var(--deep-blue);
+    box-shadow: 0px 1px 10px rgba(13, 46, 87, 0.05);
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.forBusinessBtn{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.6rem;
+    color: var(--deep-blue);
+    cursor: pointer;
+}
+.virtualBookingBtn{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    color: var(--deep-blue);
+    border: none;
+    cursor: pointer;
+}
+.activebtn{
+    background-color: var(--deep-blue);
+    color: #ffff;
+}
+.bookingInfo{
+    width: 60%;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--gray);
+}
+.pricingBottom{
+    padding-top: 130px;
+    width: 95%;
+    margin-right: auto;
+    position: relative;
+}
+.pricingCreateAccountContainer{
+    width: 100%;
+    height: 350px;
+    background-color: var(--deep-blue);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 68px;
+    box-sizing: border-box;
+}
+.createAccount{
+    width: 210px;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 1.4rem;
+    color: var(--deep-blue);
+    background-color: #ffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.pricingCreateAccountContainer>p{
+    font-size: 2rem;
+    color: #ffff;
+    width: 50%;
+}
+.imageWrapper{
+    position: absolute;
+    right: -50px;
+    bottom: -40px;
+}
+@media screen and (max-width: 1115px){
+    .bookingSessionWrapper{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 769px){
+    .imageWrapper{
+        position: relative;
+        top: -60px;
+    }
+    .pricingCreateAccountContainer>p{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 425px){
+    .forBusinessBtn, .virtualBookingBtn{
+        font-size: 1.4rem;
+    }
+    .bookingOptions{
+        width: 100%;
+    }
+    .bookingInfo{
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    .imageWrapper{
+        position: relative;
+        left: 0;
+        top: 20px;
+    }
+    .pricingCreateAccountContainer{
+        height: 300px;
+    }
+    .pricingCreateAccountContainer{
+        padding-left: 20px;
+    }
+    .pricingCreateAccountContainer>p{
+        font-size: 1.8rem;
+    }
+}

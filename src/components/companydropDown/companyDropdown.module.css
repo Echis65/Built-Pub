@@ -1,0 +1,42 @@
+.companyDropdown{
+    width: 580px!important;
+    height: fit-content;
+    padding: 25px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    background-color: #ffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    left: -90px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.linkSelected{
+    transform: translateY(-8px);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+.companyDropdownItem{
+    padding: 10px;
+    cursor: pointer;
+}
+.companyDropdownItem:hover{
+    background-color: #F5F5F5;
+}
+.companyDropdownActive{
+    background-color: #F5F5F5;
+}
+.productObj{
+    font-size: 1.2rem!important;
+    font-weight: 500;
+    color: #4F4F4F!important;
+}
+.companyDropdownItem p:nth-child(1){
+    font-size: 1.4rem!important;
+    color: #4F4F4F!important;
+    font-weight: 600!important;
+    margin-bottom: 8px;
+}

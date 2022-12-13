@@ -1,0 +1,64 @@
+.career{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 85px;
+}
+.careerWrapper{
+    width: 90%;
+    margin: auto;
+    padding: 100px 0;
+}
+.careerTop{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.careerTop>p{
+    font-size: 1.6rem;
+    color: var(--gray);
+    font-weight: 500;
+    margin-right: 30px;
+    border-bottom: 2px solid var(--gray);
+}
+.careerTop .rightArrow{
+    font-size: 2.2rem!important;
+    margin-right: 30px;
+}
+.careerTop>span{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--gray);
+}
+.careerHeader .title{
+    font-size: 4rem;
+    color: var(--gray);
+    margin-bottom: 50px;
+}
+.careerbodyItem>h1{
+    font-size: 2.4rem;
+    color: var(--gray);
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.careerbodyItem{
+    margin-bottom: 50px;
+}
+.careerbodyItem>p{
+    font-size: 1.6rem;
+    color: var(--gray);
+    font-weight: 500;
+    margin-bottom: 40px;
+    width: 70%;
+    line-height: 30px;
+}
+.careerbodyItem ul{
+    padding-left: 20px;
+}
+.careerbodyItem li{
+    font-size: 1.6rem;
+    color: var(--gray);
+    font-weight: 500;
+    margin-bottom: 10px;
+}

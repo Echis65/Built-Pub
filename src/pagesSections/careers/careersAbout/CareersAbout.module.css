@@ -1,0 +1,65 @@
+.careersAbout{
+    width: 100%;
+    height: 120vh;
+}
+.careersAboutWrapper{
+    width: 95%;
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.careersAboutheader{
+    margin-bottom: 20px;
+}
+.careersAboutheader h1{
+    font-size: 4rem;
+    color: #4F4F4F;
+    margin-bottom: 20px;
+}
+
+.slidebtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(13, 46, 87, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.slideIcon{
+    color: #0D2E57;
+    font-weight: 500;
+    font-size: 2.2rem!important;
+    cursor: pointer;
+}
+.careersAboutSliderIndicator{
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.sliderIndicatorbar{
+    width: 88%;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #E2EAF3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.indicator{
+    width: 100%;
+    height: 10px;
+    background-color: #0D2E57;
+    border-radius: 20px;
+}
+.mySwiper{
+    width: 100%;
+    height: 110%;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 20px;
+}
+

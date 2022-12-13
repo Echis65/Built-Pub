@@ -1,0 +1,103 @@
+.team{
+    width: 100%;
+}
+.teamWrapper{
+    width: 90%;
+    margin: auto;
+}
+.teamWrapper>h1{
+    text-align: center;
+    font-size: 4rem;
+    color: #353650;
+    margin-bottom: 60px;
+}
+.teamMemberContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.teamMemberinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+    cursor: pointer;
+    z-index: 1;
+    margin-right: 100px;
+}
+.teamMemberinfo:hover .memberPosition{
+    opacity: 1;
+}
+.teamMemberinfo:hover .memberImg::after{
+    opacity: 1;
+}
+.memberImg{
+    position: relative;
+}
+.memberImg>img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    z-index: -1;
+}
+.memberImg::after{
+    display: block;
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(360deg, #000000 4.75%, rgba(255, 255, 255, 0) 94.75%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.6s ease;
+    z-index: 1;
+}
+
+.memberName{
+    font-size: 2.4rem;
+    color: var(--gray);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.memberPosition{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--gray);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+.socialLinks{
+    position: absolute;
+    top: 160px;
+    left: 70px;
+    opacity: 0;
+    transition: all 0.6s ease;
+    z-index: 100;
+}
+.teamMemberinfo:hover .socialLinks{
+    opacity: 1;
+}
+.memberSocialLink{
+    font-size: 2.2rem!important;
+    color: #ffff;
+    margin-right: 20px;
+    z-index: 4;
+}
+.teamImg{
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+    object-fit: contain;
+    margin: 100px 0;
+}

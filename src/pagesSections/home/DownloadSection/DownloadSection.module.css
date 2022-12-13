@@ -1,0 +1,120 @@
+.downloadSection{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.downloadSectionWrapper{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+.downloadSectionLeft{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* .downloadSectionLeft img{
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    z-index: -1;
+} */
+.downloadSectionRight{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+.downloadHeader{
+    margin-bottom: 40px;
+}
+.downloadHeader h1{
+    font-size: 4rem;
+    text-align: left;
+    width: 80%;
+}
+.rightContainer p{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.playStoresContainer{
+    width: 100%;
+    display: flex;
+}
+.imageWrapper img{
+    width: 100%!important;
+    margin-top: 80px!important;
+    object-fit: contain;
+}
+.imageWrapperD img{
+    width: 200px!important;
+    height: 80px!important;
+    margin-right: 20px;
+    object-fit: contain!important;
+}
+.imageWrapperGoogle img{
+    width: 200px!important;
+    height: 80px!important;
+    object-fit: contain;
+}
+.imageWrapperGoogle{
+    margin-right: 30px;
+}
+@media screen and (max-width: 1115px){
+    .downloadSectionWrapper{
+        width: 95%;
+    }
+    .imageWrapperD{
+        margin-right: 20px;
+    }
+    .imageWrapper{
+        position: absolute;
+        bottom: -70px;
+    }
+}
+@media screen and (max-width: 769px){
+    .downloadSection{
+        height: 160vh;
+    }
+    .downloadSectionWrapper{
+        grid-template-columns: 1fr;
+    }
+    .downloadSectionLeft{
+        grid-row: 2;
+    }
+    .downloadSectionRight{
+        grid-row: 1;
+    } 
+    .downloadSectionRight{
+        padding-left: 0;
+    }
+    .downloadHeader h1{
+        font-size: 3.5rem;
+    }
+    .rightContainer p{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .downloadSection{
+        height: 120vh;
+    }
+    .imageWrapper{
+        bottom: -20px;
+    }
+    .downloadHeader h1{
+        font-size: 2.8rem;
+        text-align: center;
+        margin: auto;
+    }
+    .rightContainer p{
+        text-align: center;
+    }
+}

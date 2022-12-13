@@ -1,0 +1,70 @@
+.countrySelector{
+    width: 190px;
+    height: 84vh;
+    padding: 10px 0;
+    background-color: #ffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    overflow-y: scroll;
+}
+.countrySelector::-webkit-scrollbar{
+    border-radius: 20px;
+    width: 1rem;
+    margin-block: 20px;
+}
+.countrySelector::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: var(--deep-blue);
+    margin: 20x 0;
+    width: 1.6rem;
+}
+.country{
+    margin-bottom: 10px;
+    padding: 10px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.country:hover{
+    background-color: #F5F5F5;
+}
+.country>span{
+    font-size: 1.6rem;
+    color: var(--gray);
+}
+.checked{
+    opacity: 0;
+    font-size: 1.6rem;
+    font-weight: bold!important;
+    color: var(--gray);
+}
+.activeCountry .checked{
+    opacity: 1;
+}
+.imgWrapper{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+@media screen and (max-width: 1115px){
+    .countrySelector{
+        height: 75vh;
+    }
+}
+@media screen and (max-width: 769px){
+    .countrySelector{
+        width: 80px;
+    }
+    .country>span{
+        display: none;
+    }
+}
+@media screen and (max-width: 425px){
+    .countrySelector{
+        height: 80vh;
+        overflow: scroll;
+    }
+}

@@ -1,0 +1,209 @@
+.productSamples{
+    width: 100%;
+    height: 100%;
+}
+.productSamplesWrapper{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.samplebodyOne{
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.samplebodyOne h1{
+    color: #4F4F4F;
+    font-size: 5rem;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 70px;
+}
+.sampleCards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+}
+.sampleCard{
+    width: 100%;
+    height: fit-content;
+}
+.sampleCardImg{
+    width: 100%;
+    height: 350px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.sampleCardImg img{
+    width: 100%!important;
+    height: 350px!important;
+    object-fit: cover!important;
+    border-radius: 10px;
+}
+.sampleCard p{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+.invoices{
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.invoices h1{
+    color: #4F4F4F;
+    font-size: 5rem;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 70px;
+}
+.invoicesCards{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+.invoiceCardConventional{
+    width: 80%;
+    height: fit-content;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+.invoiceCardConventional>h1{
+    font-size: 2.8rem;
+    width: 100%;
+    margin-bottom: 35px;
+}
+.cardDetails li{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 30px;
+}
+.listInfo p{
+    font-size: 1.6rem;
+    color: var(--gray);
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.invoiceCardBuilt{
+    width: 100%;
+    height: fit-content;
+    background: #004395;
+    border-radius: 10px;
+    padding: 20px;
+}
+.invoiceCardBuilt>h1{
+    width: 100%;
+    font-size: 2.8rem;
+    color: #ffff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cardDetailsbuilt li{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 30px;
+}
+.dashIcon{
+    color: #ffff;
+    font-size: 2.4rem!important;
+    font-weight: bold;
+}
+.builtlistInfo p{
+    font-size: 1.6rem;
+    color: #ffff;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+.invoiceCardBuilt button{
+    width: 220px;
+    height: 40px;
+    background-color: #ffff;
+    font-size: 1.6rem;
+    color: #4F4F4F;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.buttonContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 1115px){
+    .productSamplesWrapper{
+        width: 95%;
+    }
+    .sampleCards{
+        gap: 50px;
+    }
+    .samplebodyOne h1{
+        width: 80%;
+    }
+    .invoiceCardConventional{
+        width: 95%;
+    }
+    .invoices h1{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 769px){
+    .sampleCards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .samplebodyOne h1{
+        font-size: 3.5rem;
+    }
+    .invoicesCards{
+        grid-template-columns: 1fr;
+    }
+    .invoiceCardConventional{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .invoiceCardBuilt{
+        box-sizing: border-box;
+    }
+    .invoices h1{
+        font-size: 3.5rem;
+    }
+    
+}
+@media screen and (max-width: 425px){
+    .invoices h1{
+        font-size: 2.8rem;
+        width: 100%;
+    }
+    .sampleCards{
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+    .samplebodyOne h1{
+        font-size: 2.8rem;
+        width: 100%;
+    }
+    .invoicesCards{
+        width: 95%;
+    }
+    .invoiceCardBuilt h1, .invoiceCardConventional h1{
+        font-size: 2rem;
+    }
+}

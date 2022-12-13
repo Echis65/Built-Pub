@@ -1,0 +1,117 @@
+.intro{
+    width: 100%;
+    height: 100vh;
+    background-color:  rgba(13, 46, 87, 0.02);
+}
+.introWrapper{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+.aboutHeader{
+    margin-bottom: 40px;
+}
+.aboutHeader h1{
+    color: #0D2E57!important;
+    font-size: 5rem;
+    width: 80%;
+}
+.aboutIntroInfo p{
+    color: #0D2E57!important;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    width: 80%;
+}
+.getStarted{
+    width: 80%;
+    height: 62px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(13, 46, 87, 0.05);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.getStarted input{
+    flex: 2;
+    height: 100%;
+    font-size: 1.4rem;
+    border: none;
+}
+.getStarted input:focus{
+    outline: none;
+}
+.getStarted button{
+    flex: 1.5;
+    height: 100%;
+    background-color: #0D2E57;
+    text-transform: capitalize;
+    color: #ffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+.createAccountbtn{
+    cursor: pointer;
+}
+@media screen and (max-width: 1115px){
+    .introWrapper{
+        width: 95%;
+    }
+    .aboutHeader h1{
+        width: 100%;
+    }
+    .aboutIntroInfo p{
+        width: 100%;
+    }
+    .getStarted{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 769px){
+    .intro{
+        padding: 80px 0;
+        height: 100%;
+    }
+    .introWrapper{
+        grid-template-columns: 1fr;
+    }
+    .aboutHeader>h1{
+        font-size: 3.5rem;
+    }
+    .aboutIntroInfo p{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 769px){
+    .introleft{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutHeader>h1{
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .aboutIntroInfo p{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .imageWrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+}

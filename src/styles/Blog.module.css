@@ -1,0 +1,64 @@
+.blog{
+   width: 100%;
+   height: 100%;
+}
+.blogHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.blogHeader h1{
+    padding-top: 130px;
+    font-size: 4.8rem;
+    color: #4F4F4F;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.blogHeader p{
+    font-size: 2rem;
+    color: #4F4F4F;
+    margin-bottom: 50px;
+}
+.searchbox{
+    margin-bottom: 60px;
+    height: 62px;
+    width: 45%;
+    border: 0.5px solid #004395;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.searchbox input{
+    flex: 3;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 1.4rem;
+}
+.searchbtn{
+    flex: 1.4;
+    height: 100%;
+    background-color: #004395;
+    color: #ffff;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.blogBody{
+    width: 100%;
+    padding: 100px 0;
+    background-color:  rgba(13, 46, 87, 0.02);
+}
+.blogbodyWrapper{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 65px;
+}

@@ -1,0 +1,114 @@
+.productsSection{
+    width: 100%;
+    height: 140vh;
+    background-color:  rgba(13, 46, 87, 0.02);
+}
+.productSectionWrapper{
+    width: 95%;
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.productSectionHeader{
+    margin-bottom: 50px;
+}
+.productSectionHeader h1{
+    font-size: 4rem;
+    color: #4F4F4F;
+    margin-bottom: 20px;
+}
+.productSectionHeader h4{
+    font-size: 2.4rem;
+    color: #4F4F4F;
+}
+.slidebtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(13, 46, 87, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.slidebtnLeft{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(13, 46, 87, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    float: right;
+}
+.slideicon{
+    color: #0D2E57;
+    font-weight: 500;
+    font-size: 2.2rem!important;
+    cursor: pointer;
+}
+.sliderIndicatorContainer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.sliderIndicatorbar{
+    width: 88%;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #E2EAF3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.indicator{
+    width: 100%;
+    height: 100%;
+    background-color: #0D2E57;
+    border-radius: 20px;
+}
+.mySwiper{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 20px;
+}
+@media screen and (max-width: 1115px){
+    .productSectionWrapper{
+        margin: auto;
+    }
+    .productSectionHeader h1{
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width: 769px){
+    .productSectionHeader h1{
+        font-size: 3rem;
+    }   
+    .productSectionHeader h4{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .slidebtn{
+        width: 35px;
+        height: 35px;
+    }
+    .slideicon{
+        font-size: 1.8rem!important;
+    }
+    .sliderIndicatorContainer{
+        margin-bottom: 20px;
+    }
+    .sliderIndicatorbar{
+        height: 5px;
+    }
+    .productSectionHeader h1{
+        font-size: 2.5rem;
+    }
+}

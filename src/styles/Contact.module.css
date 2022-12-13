@@ -1,0 +1,223 @@
+.contact{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 85px;
+}
+.contactWrapper{
+    width: 100%;
+    height: 100%;
+}
+.contactHeader{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactHeading{
+    font-size: 4.8rem;
+    color: #4F4F4F;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactHeadingTwo{
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #4F4F4F;
+}
+.contactInfo{
+    width: 100%;
+    background-color: rgba(13, 46, 87, 0.02);
+    box-sizing: border-box;
+    padding: 80px 0;
+}
+.contactInfoWrapper{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+.contactInfoItem{
+    width: 100%;
+    height: 100%;
+}
+.contactInfoItem h1{
+    font-size: 2rem;
+    color: #4F4F4F;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.contactInfoItem ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    color: #4F4F4F;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contactInfoItem p{
+    font-size: 1.6rem;
+    color: #4F4F4F;
+    text-align: center;
+}
+.contactBody{
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+}
+.contactBodyWrapper{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactLeft{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactLeft>h1{
+    font-size: 2.4rem;
+    color: #4F4F4F;
+    margin-bottom: 24px;
+    margin-left: 12px;
+}
+.contactMap{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+.contactRight{
+    width: 50%;
+}
+.formHeader>h1{
+    font-size: 2.4rem;
+    color: #4F4F4F;
+    margin-bottom: 24px;
+}
+.formHeader>p{
+    font-size: 1.2rem;
+    color: #4F4F4F;
+    margin-bottom: 30px;
+}
+.contactForm{
+    width: 100%;
+}
+.inputContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.inputItem{
+    width: 100%;
+    background-color: #EFF4FA;
+    height: 45px;
+    margin-bottom: 28px;
+    border-radius: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputItem>input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.4rem;
+    color: #4F4F4F;
+    border: none;
+    background-color: transparent;
+}
+.inputItem>input:focus{
+    outline: none;
+}
+.textareaContainer{
+    width: 100%;
+    height: 235px;
+    background-color: #EFF4FA;
+    border-radius: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.textareaContainer>textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    font-size: 1.4rem;
+    background-color: transparent;
+    color: #4F4F4F;
+    border: none;
+}
+.textareaContainer>textarea:focus{
+    outline: none;
+}
+.sendMsgbtn{
+    width: 150px;
+    height: 45px;
+    background-color: #ffff;
+    border: 0.5px solid#0D2E57;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #0D2E57;
+    border-radius: 5px;
+}
+.successMessage, .errorMessage{
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: green;
+}
+.errorMessage{
+    color: red!important;
+}
+@media screen and (max-width: 1115px){
+    .contactRight{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 769px){
+    .contactRight{
+        width: 80%;
+    }
+    .contactInfoWrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    .contactBodyWrapper{
+        grid-template-columns: 1fr;
+    }
+    .successMessage, .errorMessage{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .contactRight{
+        width: 95%;
+    }
+    .contactHeader{
+        height: 200px;
+    }
+    .contactHeading{
+        font-size: 3rem;
+    }
+    .contactHeadingTwo{
+        font-size: 1.8rem;
+    }
+    .contactInfoWrapper, .inputContainer{
+        grid-template-columns: 1fr;
+    }
+    .inputContainer{
+        gap: 0;
+    }
+}

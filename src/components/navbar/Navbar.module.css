@@ -1,0 +1,259 @@
+.navbar{
+    width: 100%;
+    height: 85px;
+    background-color: #0D2E57;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.navbarWhite{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05);
+}
+.navbarWrapper::after{
+    content: "";
+    display: block;
+    height: 100vh;
+    width: 140%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.6s ease;
+    visibility: none;
+    pointer-events: none;
+}
+.navbarInActive::after{
+    opacity: 1;
+}
+.navbarWrapper{
+    width: 90%;
+    height: 100%;
+    padding: 8px 0;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbarLeft{
+    display: flex;
+    align-items: center;
+}
+.logoContainer{
+    width: 150px;
+    height: 40px;
+}
+.logoContainer img{
+    width: 100%!important;
+    height: 100%!important;
+    object-fit: contain;
+}
+.navItem{
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    height: 60px;
+}
+.navItem:hover .productDropdownContainer{
+    transform: translateY(-8px);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+.navItem:hover .companyDropdownContainer{
+    transform: translateY(-8px);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+.productDropdownContainer, .companyDropdownContainer{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0);
+    transition: all 0.6s ease;
+    pointer-events: none;
+}
+
+.navItem p{
+    color: #ffff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-right: 5px;
+}
+
+.navbarWhite .navItem>p{
+    color: #4F4F4F;
+}
+.arrowDownIcon{
+    color: #ffff;
+    font-weight: bold;
+    font-size: 2rem!important;
+    cursor: pointer;
+}
+.navbarWhite .arrowDownIcon{
+    color: #4F4F4F;
+}
+.navbarRight{
+    display: flex;
+    align-items: center;
+}
+.menuIcon{
+    color: #ffff;
+    margin-right: 20px;
+    font-size: 3rem!important;
+    cursor: pointer;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.menuIconGray{
+    margin-right: 20px;
+    font-size: 3rem!important;
+    cursor: pointer;
+    color: #4F4F4F;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.loginbtn{
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #ffff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #ffff;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.loginbtn:hover{
+    background-color: #F9E251;
+    color: #0D2E57;
+    border: none;
+}
+.navbarWhite .loginbtn{
+    background-color: transparent;
+    border: 1px solid #0D2E57;
+    color: #0D2E57;
+}
+.navbarWhite .loginbtn:hover{
+    background-color: #F9E251;
+    color: #0D2E57;
+    border: none;
+}
+.registerbtn{
+    padding: 0 20px;
+    height: 40px;
+    background-color: #F9E251;
+    color: #0D2E57;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.countrySelectContainer{
+    border-left: 2px solid #ffff;
+    height: 40px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.navbarWhite .countrySelectContainer{
+    border-left: 2px solid #4F4F4F;
+}
+.imageWrapper{
+    margin-right: 5px;
+}
+.imageWrapper{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.countrySelect:hover .countrySelectorWrapper, .countrySelect:focus .countrySelectorWrapper{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translateY(0);
+
+}
+.countrySelectorWrapper{
+    opacity: 0;
+    visibility: false;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+    pointer-events: none;
+    position: absolute;
+    top: 40px;
+    left: -60px;
+    transition: all 0.6s ease-in-out;
+}
+@media screen and (max-width: 1115px){
+    .navbarWrapper{
+        width: 95%;
+    }
+    .navItem{
+        margin-right: 20px;
+    }
+    .navItem p{
+        font-size: 1.5rem;
+    }
+    .logoContainer{
+        width: 100px;
+        height: 30px;
+    }
+    .loginbtn{
+        font-size: 1.4rem;
+        height: 30px;
+        width: 80px;
+    }
+    .registerbtn{
+        font-size: 1.4rem;
+        height: 30px;
+    }
+    .countrySelectContainer{
+        height: 30px;
+    }
+    .countrySelectorWrapper{
+        top: 30px;
+        left: -100px;
+    }
+}
+@media screen and (max-width: 893px){
+    .navItem{
+        display: none;
+    }
+    .logoContainer{
+        display: block;
+    }
+    .registerbtn, .loginbtn{
+        display: none;
+    }
+    .menuIcon{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+    .countrySelectorWrapper{
+        left: 0px;
+    }
+    .menuIconGray{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+}

@@ -1,0 +1,66 @@
+.securitySection{
+    width: 100%;
+    height: 140vh;
+    background-color: #0D2E57;
+}
+.securitySectionWrapper{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.securitySectionHeader{
+    margin-bottom: 70px;
+}   
+.securitySectionHeader h1{
+    font-size:3.8rem;
+    color: #ffff;
+    line-height: 60px;
+}
+.securityInfoItem{
+    margin-bottom: 40px;
+    display: flex;
+}
+.securityInfoItem p{
+    font-size: 2rem;
+    margin-left: 20px;
+    color: #ffff;
+}
+.securityIcon{
+    font-size: 2.5rem!important;
+    color: #ffff;
+}
+@media screen and (max-width: 1115px){
+    .securitySectionWrapper{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 900px){
+    .securitySectionHeader h1{
+        font-size: 3rem;
+        line-height: 30px;
+    }
+    .securitySectionHeader{
+        margin-bottom: 30px;
+    }
+    .securityInfoItem p{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 769px){
+    .securitySection{
+        height: 100%;
+        padding: 60px 0;
+    }
+    .securitySectionWrapper{
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}
+@media screen and (max-width: 425px){
+    .securitySectionHeader h1{
+        font-size: 2.8rem;
+    }
+}

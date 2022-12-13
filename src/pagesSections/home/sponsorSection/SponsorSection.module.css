@@ -1,0 +1,37 @@
+.sponsorSection{
+    width: 100%;
+}
+.sponsorSectionWrapper{
+    padding: 80px 0;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sponsorSectionWrapper h1{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.sponsorSectionBody{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.imageWrapper{
+    width: 20rem;
+    height: 100px;
+    position: relative;
+}
+.sponsorSectionBody img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.sponsorSectionBody:not(:last-child){
+    margin-right: 20px;
+}

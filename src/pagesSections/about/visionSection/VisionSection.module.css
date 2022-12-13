@@ -1,0 +1,141 @@
+.visionSection{
+    width: 100%;
+    height: 100%;
+}
+.visionHeader{
+    width: 100%;
+    height: 330px;
+    background-color: #0D2E57;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.visionHeader h1{
+    font-size: 4.8rem;
+    color: #ffff;
+    font-weight: 500;
+    position: relative;
+}
+/* .first::before{
+    width: 70px;
+    height: 10px;
+    background-color: #FBD116;
+    display: block;
+    content: "";
+    position: absolute;
+    top: -15%;
+    left: 25%;
+} */
+.visionBody{
+    width: 90%;
+    padding: 100px 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #ffff;
+}
+.visionbodyLeft p{
+    font-size: 3.2rem;
+    color: #4F4F4F;
+    width: 80%;
+    line-height: 44px;
+}
+.visionbodyRight img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.visionbodyLast{
+    width: 100%;
+    background-color:  rgba(13, 46, 87, 0.02);
+}
+.lastWrapper{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 100px 0;
+    gap: 60px;
+}
+.lastleft img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   
+}
+.lastRight{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.lastRight h3{
+    font-size: 3.2rem;
+    color: #4F4F4F;
+    margin-bottom: 40px;
+    padding-left: 140px;
+}
+.lastRight p{
+    font-size: 2.4rem;
+    color: #4F4F4F;
+    margin-bottom: 40px;
+    width: 70%;
+    line-height: 40px;
+}
+@media screen and (max-width: 1115px){
+    .visionBody{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 769px){
+    .first::before{
+        width: 50px;
+        height: 5px;
+    }
+    .visionbodyLeft p{
+        width: 100%;
+    }
+    .visionHeader h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .visionBody{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .lastWrapper{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .lastRight h3{
+        padding-left: 0;
+        width: 100%;
+    }
+    .lastRight{
+        align-items: flex-start;
+    }
+    .lastRight p{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px){
+    .visionHeader{
+        height: 250px;
+    }
+    .visionHeader h1{
+        font-size: 2.8rem;
+    }
+    .visionbodyLeft p{
+        font-size: 1.8rem;
+    }
+   .lastRight h3{
+    font-size: 2.8rem;
+   }
+   .lastRight p{
+    font-size: 1.8rem;
+   }
+}

@@ -1,0 +1,148 @@
+.servicesSection{
+    width: 100%;
+    height: 140vh;
+}
+.servicesSectionWrapper{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.servicesHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.servicesHeader h1{
+    font-size: 3.2rem;
+    color: #4F4F4F;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.servicesSubHeader p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #4F4F4F;
+    width: 60%;
+    margin: auto;
+}
+.servicesBody{
+    display: flex;
+}
+.servicesLeft{
+    flex: 3;
+}
+.servicesRight{
+    flex: 1;
+    padding-left: 100px;
+    margin-top: 30px;
+}
+.servicesRightItem{
+    width: 100%;
+    height: 50px;
+    border-left: 2px solid #D1D1D1;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.servicesRightItem:hover p{
+    color: #4F4F4F;
+}
+.servicesRightItem::after{
+    height: 100%;
+    width: 8px;
+    border-radius: 20px;
+    content: "";
+    position: absolute;
+    left: -6px;
+    background-color: #DBB300;
+    display: none;
+}
+.servicesRightItem p{
+    font-size: 1.8rem;
+    color: #D1D1D1;
+}
+.active::after{
+    display: block;
+}
+.active p{
+    color: #4F4F4F;
+}
+.imageWrapper img{
+    border-radius: 10px;
+}
+.servicesNav{
+    display: none;
+}
+@media screen and (max-width: 1115px){
+    .servicesSection{
+        height: 100%;
+        padding-bottom: 50px;
+    }
+    .servicesSectionWrapper{
+        width: 95%;
+    }
+    .servicesBody{
+        flex-direction: column;
+    }
+    .servicesLeft{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .servicesRight{
+        display: none;
+    }
+    .servicesNav{
+        display: flex;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .servicesRightItem{
+        padding: 0 10px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+    }
+    .servicesRightItem>p{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 769px){
+    .servicesHeader h1{
+        font-size: 2.8rem;
+    }
+    .servicesSubHeader p{
+        width: 80%;
+    } 
+}
+@media screen and (max-width: 425px){
+    .servicesNav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .servicesHeader h1{
+        font-size: 2.8rem;
+    }
+    .servicesSubHeader p{
+        font-size: 1.8rem;
+        width: 100%;
+    }
+    .servicesRightItem>p{
+        font-size: 1.2rem;
+    } 
+}

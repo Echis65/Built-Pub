@@ -1,0 +1,143 @@
+.introSection{
+    width: 100%;
+    height: 110vh;
+    background-color: #0D2E57;
+    position: relative;
+    z-index: 1;
+}
+.introSectionWrapper{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.introSectionRight{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.introSectionRightImg{
+    width: 100%;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.homeHeader{
+    margin-bottom: 50px;
+}
+.homeHeader h1{
+    font-size: 4rem;
+    line-height: 50px;
+    color: #ffff;
+    width: 80%;
+}
+.introInfo{
+    margin-bottom: 50px;
+    width: 80%;
+}
+.introInfo p{
+    color: #ffff!important;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+.createAccountbtn{
+    width: 250px;
+    height: 60px;
+    background-color: #F9E251;
+    border: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.createAccountbtn span{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.arrowRight{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 2.4rem!important;
+}
+.imageWrapper{
+   position: absolute!important;
+   top: 0;
+   right: 0;
+}
+@media screen and (max-width: 1115px){
+    .introSectionWrapper{
+        width: 95%;
+    }
+    .homeHeader h1{
+        width: 100%;
+        font-size: 3.5rem;
+    }
+    .introInfo p{
+        font-size: 2rem;
+    }
+    .createAccountbtn{
+        height: 45px;
+    }
+    .imageWrapper{
+        float: left;
+        width: 65%;
+        height: 90%;
+        }
+}
+@media screen and (max-width: 769px){
+    .imageWrapper{
+        float: left;
+        width: 40%;
+        height: 90%;
+        }
+    .introSection{
+        height: 100%;
+        padding: 50px 0;
+    }
+    .introSectionWrapper{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .introSectionLeft{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .homeHeader{
+        margin-bottom: 20px;
+    }
+    .homeHeader h1{
+        text-align: center;
+    }
+    .introInfo{
+        margin-bottom: 20px;
+    }
+    .introInfo p{
+        text-align: center;
+    }
+    .introSectionRight{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 425px){
+    .homeHeader h1{
+        font-size: 3rem;
+    }
+    .introInfo p{
+        width: 100%;
+        font-size: 1.6rem;
+    }
+}
